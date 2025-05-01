@@ -1,0 +1,24 @@
+.header .inner .header-menu .languege .en {
+    opacity: 100%;
+}
+
+.header .inner .header-menu .languege .kr {
+    opacity: 40%;
+}
+
+.header .inner .nav .gnb>li {
+    padding-right: 0;
+}
+
+.header .inner .nav .gnb>li:nth-child(1) {
+    padding-right: 130px;
+}
+.header .inner .nav .gnb>li:nth-child(2) {
+    padding-right: 130px;
+}
+.header .inner .nav .gnb>li:nth-child(3) {
+    padding-right: 110px;
+}
+.header .inner .nav .gnb>li:nth-child(4) {
+    padding-right: 100px;
+}

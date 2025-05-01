@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16" style="fill: rgb(0, 0, 0);">
+        <defs>
+            <clipPath id="clip-path">
+                <rect id="Rectangle_184301" data-name="Rectangle 184301" width="16" height="16" transform="translate(983 3349)" fill="none"/>
+            </clipPath>
+        </defs>
+        <g id="arrow" transform="translate(-983 -3349)" clip-path="url(#clip-path)">
+            <path id="Union_12" data-name="Union 12" d="M-914.316,6387.074l3.057-3.373H-920v-2h8.734l-3.049-3.354,1.48-1.345,5.18,5.7-5.179,5.717Z" transform="translate(1904.827 -3025.708)" style="fill: rgb(0, 0, 0);"/>
+        </g>
+    </svg>

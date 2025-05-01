@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'light';
+    src: url('NanumSquareOTF_acR00.eot');
+    src: url('NanumSquareOTF_acR00.eot?#iefix') format('embedded-opentype'),
+        url('NanumSquareOTF_acR00.woff2') format('woff2'),
+        url('NanumSquareOTF_acR00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('NanumSquareOTF_acEB00.eot');
+    src: url('NanumSquareOTF_acEB00.eot?#iefix') format('embedded-opentype'),
+        url('NanumSquareOTF_acEB00.woff2') format('woff2'),
+        url('NanumSquareOTF_acEB00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nomal';
+    src: url('NanumSquareOTFB00.eot');
+    src: url('NanumSquareOTFB00.eot?#iefix') format('embedded-opentype'),
+        url('NanumSquareOTFB00.woff2') format('woff2'),
+        url('NanumSquareOTFB00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,722 @@
+.mobile {
+    display: none;
+}
+
+.mobile-slide {
+    display: none;
+}
+
+.banner-mobile {
+    display: none;
+}
+
+.section {
+    overflow: hidden;
+}
+
+/* ################### 햄버거 메뉴 애니메이션 ################## */
+
+.mobile-gnb .menu-wrap {
+    position: relative;
+    width: 28px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.mobile-gnb .menu-wrap .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    left: 0;
+}
+
+body.active .mobile-gnb .menu-wrap .line {
+    background: #171c22;
+}
+
+.mobile-gnb .menu-wrap .line:first-child {
+    top: 0;
+    transform-origin: 25% 50%;
+    transition: 0.3s;
+}
+
+.mobile-gnb .menu-wrap .line:nth-child(2) {
+    top: calc(50% - 1px);
+}
+
+.mobile-gnb .menu-wrap .line:last-child {
+    bottom: 0;
+    transform-origin: 25% 50%;
+    transition: 0.3s;
+}
+
+.mobile-gnb .menu-wrap.open .line:first-child {
+    transform: rotate(45deg) translateX(10%);
+}
+
+.mobile-gnb .menu-wrap.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-gnb .menu-wrap.open .line:last-child {
+    transform: rotate(-45deg) translateX(10%);
+}
+
+/* ################# 아코디언 메뉴 ################## */
+
+.accordion {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100% - 80px);
+
+    background-color: #171c22;
+    color: #fff;
+
+    transition: left 0.3s;
+}
+
+.accordion.active {
+    left: 0;
+    overflow-y: auto;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'bold';
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.accordion-item .accordion-header>img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 10px;
+
+    filter: invert(1);
+}
+
+.accordion-icon {
+    transition: transform 0.3s;
+}
+
+.accordion-icon.rotate {
+    transform: scaleY(-1);
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.accordion-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* 언어선택 */
+.accordion .languege {
+    margin-top: 20px;
+    display: flex !important;
+    font-size: 16px !important;
+}
+
+.accordion .languege .kr::after {
+    margin: 0 9px !important;
+    height: 10px !important;
+}
+
+body.active .accordion {
+    background: #fff;
+    color: #171c22;
+}
+
+body.active .accordion-item .accordion-header>img {
+    filter: invert(0);
+}
+
+
+/* ################### 1600px 미디어쿼리 ################## */
+
+@media screen and (max-width: 1600px) {
+    .main-visual .text .title {
+        font-size: 60px;
+    }
+
+    .main-visual .text .sub-title {
+        font-size: 30px;
+    }
+
+    .section-01 .text .title-text {
+        font-size: 38px;
+    }
+
+    .section-01 .text .sub-text span {
+        display: inline;
+    }
+
+    .section-01 .item-wrap .item .title span {
+        display: block;
+    }
+
+    .section-01 .item-wrap .item .big {
+        font-size: 60px;
+    }
+
+    .section-01 .item-wrap .item .small {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-04 .text .main-text {
+        font-size: 80px;
+    }
+}
+
+/* ################### 1400px 미디어쿼리 ################## */
+
+@media screen and (max-width: 1400px) {
+    .section-04 .text .main-text {
+        margin-left: 20vw;
+    }
+
+    .section-04 .text .sub-text {
+        margin-left: 20vw;
+    }
+
+    .section-04 .text .sub-text .ex {
+        width: 40vw;
+    }
+    
+    .section-05 .inner .title {
+        font-size: 100px;
+    }
+
+    .section-05 .content {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .mobile {
+        display: block;
+    }
+
+    .header .inner .nav .gnb,
+    .header .inner .header-menu .languege {
+        display: none;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header .inner .logo {
+        width: 80px;
+        height: 80px;
+        right: 8.5vw;
+    }
+
+    .header .inner .logo svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header .inner .header-menu {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .mobile.mobile-gnb {
+        display: block !important;
+    }
+
+    .mobile.mobile-gnb img {
+        height: 100%;
+        filter: invert(1);
+    }
+
+    .accordion {
+        padding: 40px 10vw;
+    }
+
+    .main-visual {
+        margin-top: 80px;
+        height: calc(100vh - 80px);
+        min-height: calc(100vh - 80px);
+    }
+
+    .main-visual .text .title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .main-visual .text .sub-title {
+        font-size: 25px;
+    }
+
+    .main .main-visual .banner .banner-grid-num6 .mask-item {
+        height: calc(100vh - 80px);
+    }
+
+    .section-01 .item-wrap .item .title {
+        font-size: 14px;
+    }
+
+    .section-01 .item-wrap .item .big {
+        font-size: 50px;
+    }
+
+    .section-01 .item-wrap .item .small {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .section-03 .title-text {
+        font-size: 28px;
+    }
+
+    .section-03 .sub-text {
+        font-size: 14px;
+    }
+
+    .section-04 .text .main-text {
+        font-size: 60px;
+    }
+
+    .section-04 .text .sub-text {
+        margin-top: 50px;
+    }
+
+    .section-04 .text .sub-text .btn {
+        margin-top: 30px;
+    }
+
+    .section-04 .text .sub-text {
+        flex-direction: column;
+        margin-left: 30vw;
+        padding: 0;
+    }
+
+    .section-04 .text .sub-text .keyword {
+        margin-bottom: 30px;
+        padding-left: 1vw;
+    }
+
+    .section-04 .text .sub-text .ex {
+        width: 40vw;
+        padding-right: 1vw;
+    }
+
+    .section-04 .text .sub-text .btn {
+        padding: 0 1vw;
+    }
+
+    .section-05 .inner .title {
+        font-size: 80px;
+    }
+
+    .section-05 .content {
+        width: 60vw;
+    }
+}
+
+/* ################### 1030px 미디어쿼리 ################## */
+
+@media screen and (max-width: 1030px) {
+    .main-visual .text .title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .main-visual .text .sub-title {
+        font-size: 20px;
+    }
+
+    .section-01 .text {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 130px;
+    }
+
+    .section-01 .text .title-text {
+        width: 100%;
+        padding: 0 1vw;
+
+        font-size: 32px;
+    }
+
+    .section-01 .text .title-text span {
+        display: block;
+    }
+
+    .section-01 .text .sub-text {
+        margin-top: 75px;
+        padding-left: 12vw;
+        padding-right: 2vw;
+        width: 50vw;
+    }
+
+    .section-01 .text .sub-text span {
+        display: block;
+    }
+
+    .section-01 .item-wrap {
+        padding-left: 20vw;
+        flex-direction: column;
+        row-gap: 5vw;
+    }
+
+    .section-01 .item-wrap .flex-box {
+        column-gap: 2vw;
+    }
+
+    .section-01 .item-wrap .item {
+        padding: 1vw;
+    }
+
+    .section-01 .text .margin-top {
+        margin-top: 25px;
+    }
+
+    .main .section-02 .banner .banner-grid-num6 .mask-item {
+        height: 20vw;
+    }
+
+    .main .section-02 .banner-grid-num6 .mask-item:nth-of-type(6) {
+        width: 10vw;
+    }
+
+    .section-03 .text-wrap {
+        flex-direction: column;
+    }
+
+    .section-03 .title-text {
+        font-size: 32px;
+        width: auto;
+        padding: 0 1vw;
+    }
+
+    .section-03 .sub-text {
+        margin-top: 60px;
+        margin-left: 20vw;
+    }
+
+    .veiw-more-btn {
+        width: 150px;
+    }
+
+    .veiw-more-btn span {
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .veiw-more-btn .arrow {
+        display: none;
+    }
+
+    .section-04 .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+    }
+
+    .section-05 .inner .title {
+        font-size: 80px;
+        margin-left: 10vw;
+    }
+
+    .section-05 .content {
+        padding-left: 0;
+    }
+}
+
+/* ################### 768px 미디어쿼리 ################## */
+
+@media screen and (max-width: 768px) {
+    .overlay-grid {
+        width: 100%;
+    }
+
+    .single-grid:nth-child(2),
+    .single-grid:nth-child(4) {
+        display: none;
+    }
+
+    .single-grid:nth-child(n + 7) {
+        display: none;
+    }
+
+    .single-grid:nth-child(1),
+    .single-grid:nth-child(6) {
+        width: 20px;
+    }
+
+    .single-grid:nth-child(3),
+    .single-grid:nth-child(5) {
+        width: calc(50% - 20px);
+    }
+
+    .mode-btn-wrap {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .mode-btn-wrap .btn {
+        padding: 0 20px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .header .inner {
+        padding: 0 20px;
+    }
+
+    .header .inner .logo {
+        right: 15px;
+    }
+
+    .accordion {
+        padding: 40px 20px;
+    }
+
+    .banner-grid-num6 .mask-item {
+        width: 50vw !important;
+        transform-origin: left;
+    }
+
+    .banner-grid-num6 .mask-item:nth-of-type(1),
+    .banner-grid-num6 .mask-item:nth-of-type(4) {
+        width: 20px !important;
+    }
+
+    .banner-grid-num6 .mask-item:nth-of-type(5),
+    .banner-grid-num6 .mask-item:nth-of-type(6) {
+        display: none;
+    }
+
+    .main-visual {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .main-visual .text {
+        top: auto;
+        bottom: 75px;
+        left: 20px;
+        transform: none;
+        padding: 0;
+    }
+
+    .main-visual .text .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .main-visual .text span {
+        display: block;
+    }
+
+    .main-visual .text .sub-title {
+        font-size: 20px;
+    }
+
+    .section .inner {
+        padding: 0 20px;
+    }
+
+    .section-01 .text {
+        margin-bottom: 80px;
+    }
+
+    .section-01 .text .sub-text {
+        width: 60vw;
+        padding-right: 0;
+        padding-left: 8vw;
+    }
+
+    .section-01 .item-wrap {
+        width: 100%;
+        padding-left: 0;
+
+        align-items: flex-end;
+        row-gap: 30px;
+    }
+
+    .section-01 .item-wrap .item {
+        width: auto;
+    }
+
+    .section-01 .item-wrap .flex-box {
+        row-gap: 30px;
+        column-gap: 5vw;
+    }
+
+    .section-01 .item-wrap .item .title {
+        font-size: 13px;
+        font-family: 'light';
+
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .section-01 .item-wrap .item .big {
+        font-size: 40px;
+    }
+
+    .section-01 .item-wrap .item .small {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .banner-pc {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+    }
+
+    .section-02 {
+        margin: 120px 0;
+    }
+
+    .main .section-02 .banner .banner-grid-num6 .mask-item {
+        height: 68vw;
+    }
+
+    .section-03 {
+        margin-bottom: 120px;
+    }
+
+    .section-03 .title-text {
+        font-size: 24px;
+    }
+    
+    .section-03 .sub-text {
+        margin-left: 0;
+        padding: 0 10vw;
+        width: 100%;
+    }
+
+    .section-04 {
+        margin-bottom: 120px;
+    }
+
+    .section-04 .pc-slide {
+        display: none;
+    }
+
+    .section-04 .mobile-slide {
+        display: block;
+    }
+
+    .section-04 .text .main-text {
+        margin-left: 10vw;
+    }
+
+    .section-04 .swiper-btn-wrap {
+        display: none;
+    }
+
+    .section-04 .text .sub-text {
+        margin-left: 25vw;
+    }
+
+    .section-04 .text .sub-text .ex {
+        width: 55vw;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        margin-left: 65vw;
+    }
+
+    .section-04 .slide-arrow {
+        top: 50px;
+    }
+
+    .section-04 .scroll-arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-05 .inner .title {
+
+        font-size: 60px;
+        margin-left: 1vw;
+    }
+
+    .section-05 .content {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .section-05 .content .news-wrap {
+        padding: 30px 0 20px;
+    }
+
+    .section-05 .news-wrap .source {
+        font-size: 14px;
+        margin-bottom: 12px;
+        font-family: 'light';
+    }
+
+    .section-05 .news-wrap .news .text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .section-05 .news-wrap .news .arrow-news {
+        top: -1px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ################### 500px 미디어쿼리 ################## */
+
+@media screen and (max-width: 500px) {
+    .section-01 .text .sub-text {
+        width: 80vw;
+    }
+
+    .section-03 .title-text span {
+        display: block;
+    }
+
+    .section-04 .text .main-text {
+        font-size: 40px;
+    }
+
+    .section-04 .slide-arrow {
+        right: 80px;
+    }
+
+    .section-04 .scroll-arrow {
+        width: 10px;
+        height: 10px;
+    }
+
+    .section-05 .inner .title {
+        font-size: 40px;
+    }
+
+}
