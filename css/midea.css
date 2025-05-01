@@ -393,6 +393,19 @@ body.active .accordion-item .accordion-header > img {
     .footer-mobile {
         display: block;
     }
+
+    .footer .company {
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .footer .company-left, .footer .company-right {
+        padding: 40px 10px;
+
+        font-size: 12px;
+        gap: 10px;
+        flex-direction: column;
+    }
 }
 
 /* ################### 1030px 미디어쿼리 ################## */

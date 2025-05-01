@@ -215,7 +215,7 @@ body.active .header .inner .header-menu .languege .kr::after {
     white-space: nowrap;
 }
 
-.header .inner .nav .gnb>li {
+.header .inner .nav .gnb > li {
     position: relative;
 
     padding-right: 75px;
@@ -223,7 +223,7 @@ body.active .header .inner .header-menu .languege .kr::after {
     height: 50px;
 }
 
-.header .inner .nav .gnb>li .depth-01 {
+.header .inner .nav .gnb > li .depth-01 {
     height: 100%;
 }
 
@@ -258,7 +258,7 @@ body.active .header .inner .header-menu .languege .kr::after {
     font-family: 'light';
 }
 
-.header .inner .nav .gnb .depth-02 li>a:hover {
+.header .inner .nav .gnb .depth-02 li > a:hover {
     font-family: 'bold';
 }
 
@@ -720,14 +720,14 @@ body.active .view-more-btn .arrow {
     position: relative;
 }
 
-.section-04 .swiper .swiper-slide>img {
+.section-04 .swiper .swiper-slide > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.section-04 .swiper-slide:nth-child(2)>img,
-.section-04 .swiper-slide:nth-child(4)>img {
+.section-04 .swiper-slide:nth-child(2) > img,
+.section-04 .swiper-slide:nth-child(4) > img {
     filter: brightness(60%) !important;
 }
 
@@ -755,7 +755,8 @@ body.active .view-more-btn .arrow {
 .section-04 .swiper-button-prev:after {
     content: '';
 
-    background: url('../img/icon/arrow_back.svg') center center / cover no-repeat #e8e3dd;
+    background: url('../img/icon/arrow_back.svg') center center / cover
+        no-repeat #e8e3dd;
     width: 100%;
     height: 100%;
 
@@ -768,7 +769,8 @@ body.active .view-more-btn .arrow {
 .section-04 .swiper-button-next:after {
     content: '';
 
-    background: url('../img/icon/arrow_forward.svg') center center / cover no-repeat #e8e3dd;
+    background: url('../img/icon/arrow_forward.svg') center center / cover
+        no-repeat #e8e3dd;
     width: 100%;
     height: 100%;
 
@@ -786,7 +788,7 @@ body.active .section-04 .swiper-button-next:after {
     filter: invert(0);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -795,15 +797,20 @@ body.active .section-04 .swiper-button-next:after {
     width: auto;
 }
 
-.section-04 .swiper-horizontal>.swiper-pagination-bullets,
+.section-04 .swiper-horizontal > .swiper-pagination-bullets,
 .section-04 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .section-04 .swiper-pagination-custom,
 .section-04 .swiper-pagination-fraction {
     bottom: 8px;
 }
 
-.section-04 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.section-04 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.section-04
+    .swiper-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet,
+.section-04
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
     margin: 8px;
 }
 
@@ -1237,7 +1244,6 @@ body.active .section-06 .swiper-button-next:hover {
 .section-06 .swiper-slide-active .text .keyword {
     transform: translateX(0);
     opacity: 1;
-
 }
 
 .section-06 .swiper-slide-active .text .ex {
@@ -1311,7 +1317,7 @@ body.active .section-06 .text .keyword {
     align-items: center;
 }
 
-.section-07 .item-02 .percent .wrap>svg {
+.section-07 .item-02 .percent .wrap > svg {
     margin-bottom: 8px;
 }
 
@@ -1379,8 +1385,11 @@ body.active .section-07 .btn .border {
     background: #000;
     color: #fff;
 
-    padding: 100px 9vw 100px 10vw;
     white-space: nowrap;
+}
+
+.footer-pc {
+    padding: 100px 9vw 100px 10vw;
 }
 
 /* ########## 푸터 공통 토글 버튼 ########### */
@@ -1413,7 +1422,6 @@ body.active .section-07 .btn .border {
     position: relative;
 
     margin-bottom: 9px;
-
 }
 
 .footer .icon-line {
@@ -1458,10 +1466,7 @@ body.active .section-07 .btn .border {
 
     background: #212121;
 
-    transition:
-        max-height 0.3s,
-        opacity 0.3s,
-        visibility 0.3s;
+    transition: max-height 0.3s, opacity 0.3s, visibility 0.3s;
 
     overflow-y: auto;
     opacity: 0;
@@ -1472,9 +1477,8 @@ body.active .section-07 .btn .border {
     width: 250px;
     max-height: 150px;
 
-
     opacity: 1;
-    visibility: visible
+    visibility: visible;
 }
 
 .footer .toggle-content p {
@@ -1553,3 +1557,78 @@ body.active .section-07 .btn .border {
     color: #fc5c00;
     font-family: 'bold';
 }
+
+.footer-mobile .copy {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #acacac;
+    margin-top: 10px;
+}
+
+.footer-mobile .inner {
+    padding: 20px;
+}
+
+.footer-mobile .logo-wrap {
+    padding: 40px 10px;
+}
+
+.footer-mobile .mobile-link-container {
+    padding: 40px 10px;
+}
+
+.footer-mobile .toggle-container {
+    width: 100%;
+    padding: 0;
+}
+
+.footer-mobile .btn-wrap {
+    padding: 15px 0 10px;
+}
+
+.footer-mobile .toggle-content {
+    position: static;
+    background: transparent;
+    overflow: hidden;
+
+    width: 100%;
+    max-height: 0;
+
+    padding: 0;
+    padding-left: 30px;
+
+    transition: none;
+}
+
+.footer-mobile .toggle-content.open {
+    width: 100%;
+    max-height: 200px;
+
+    margin-bottom: 14px;
+    transition: max-height 0.8s;
+}
+
+.footer-mobile .last-btn {
+    padding: 40px 10px;
+}
+
+.footer-mobile .family-site .toggle-content {
+    display: flex;
+}
+
+.footer-mobile .family-site .toggle-content p {
+    margin: 0;
+}
+
+.footer-mobile .family-site .toggle-content > div {
+    width: 49%;
+}
+
+.footer-mobile .family-site .toggle-content.open {
+    max-height: 830px;
+}
+
+.footer-mobile .toggle-content p {
+    font-size: 12px;
+}
+
