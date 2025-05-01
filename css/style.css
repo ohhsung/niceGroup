@@ -65,7 +65,11 @@ body.active .cursor.active {
 }
 
 .single-grid.with-border {
-    border-right: 1px solid red;
+    border-right: 1px solid rgba(202, 202, 202, 0.08);
+}
+
+body.active .single-grid.with-border {
+    border-color: rgba(0, 0, 0, 0.08);
 }
 
 /* ############################ 다크모드 라이트모드 ############################## */
