@@ -516,6 +516,7 @@ body.active .mask-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .section-01 .item-wrap .item .title {
@@ -1063,8 +1064,6 @@ body.active .section-05 .news-wrap .news .arrow-news {
 .section-06 {
     margin-top: 100px;
     position: relative;
-
-    height: 2000px;
 }
 
 .section-06 .inner {
@@ -1212,6 +1211,7 @@ body.active .section-06 .swiper-button-next:hover {
     font-family: 'light';
     margin-top: 50px;
     padding-left: 2vw;
+    white-space: nowrap;
 }
 
 .section-06 .text .keyword {
