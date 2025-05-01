@@ -1290,6 +1290,7 @@ body.active .section-06 .text .keyword {
 
 .section-07 .item-02 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     border-top: 1px solid #585858;
@@ -1299,7 +1300,9 @@ body.active .section-06 .text .keyword {
 
 .section-07 .item-02 .percent {
     display: flex;
-    gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    padding-bottom: 5px;
 }
 
 .section-07 .item-02 .percent .wrap {
@@ -1307,7 +1310,8 @@ body.active .section-06 .text .keyword {
     gap: 9px;
     align-items: center;
 }
-.section-07 .item-02 .percent .wrap > svg {
+
+.section-07 .item-02 .percent .wrap>svg {
     margin-bottom: 8px;
 }
 
@@ -1323,24 +1327,48 @@ body.active .section-07 .item-02 .percent .date {
     color: #585858;
 }
 
-.section-07 .btn {
-    position: relative;
+.section-07 .btn .wrap {
+    display: flex;
+    gap: 5px;
+
     font-family: 'bold';
-    padding-right: 23px;
+
+    transition: padding 0.3s, gap 0.3s;
 }
 
-.section-07 .btn::after {
-    content: '';
-
-    display: block;
+.section-07 .btn .img {
     width: 16px;
     height: 16px;
-
-    position: absolute;
-    top: -1px;
-    right: 0;
-
-    background: url('../img/icon/arrow.svg') center center / cover no-repeat;
     filter: invert(1);
+    padding-bottom: 2px;
+}
 
+.section-07 .btn .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-07 .btn.active .wrap {
+    gap: 20px;
+}
+
+.section-07 .btn .border {
+    width: 0;
+    height: 2px;
+    background: #fff;
+    margin-top: 3px;
+
+    transition: width 0.3s;
+}
+
+.section-07 .btn.active .border {
+    width: 100%;
+}
+
+body.active .section-07 .btn .img {
+    filter: invert(0);
+}
+
+body.active .section-07 .btn .border {
+    background: #171c22;
 }

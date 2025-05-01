@@ -216,6 +216,15 @@ body.active .accordion-item .accordion-header>img {
     .section-06 .banner-btn {
         padding-left: calc(60vw - 33px);
     }
+
+    .section-07 .item-01 .counter {
+        font-size: 70px;
+    }
+
+    .section-07 .item-01 .stock {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -341,6 +350,21 @@ body.active .accordion-item .accordion-header>img {
     .section-05 .content {
         width: 60vw;
     }
+
+    .section-07 {
+        padding-right: 10vw;
+        margin: 200px 0
+    }
+
+    .section-07 .item-01 .counter {
+        font-size: 60px;
+    }
+
+    .section-07 .item-01 .stock {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
 }
 
 /* ################### 1030px 미디어쿼리 ################## */
@@ -455,6 +479,16 @@ body.active .accordion-item .accordion-header>img {
 
     .section-06 .banner-btn {
         bottom: 120px;
+    }
+
+    .section-07 .item-02 {
+        align-items: flex-start;
+    }
+
+    .section-07 .item-02 .percent {
+        flex-direction: column;
+        row-gap: 4px;
+        align-items: flex-end;
     }
 }
 
@@ -744,6 +778,38 @@ body.active .accordion-item .accordion-header>img {
         padding-right: 20px;
     }
 
+    .section-07 {
+        padding: 0 20px;
+        margin-bottom: 150px;
+    }
+
+    .section-07 .item-01 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-07 .item-01 .stock {
+        font-size: 18px;
+        padding-left: 7px;
+        margin-bottom: 30px;
+    }
+
+    .section-07 .item-01 .counter {
+        font-size: 50px;
+    }
+
+    .section-07 .item-02 {
+        padding-left: 5px;
+    }
+
+    .section-07 .item-02 .percent .wrap .red-text {
+        font-size: 14px;
+    }
+
+    .section-07 .item-02 .percent .date {
+        font-size: 12px;
+    }
+
 }
 
 /* ################### 500px 미디어쿼리 ################## */
@@ -819,4 +885,11 @@ body.active .accordion-item .accordion-header>img {
         font-size: 50px;
     }
 
+    .section-07 .btn .wrap {
+        font-size: 14px;
+    }
+
+    .section-07 .btn .img {
+        padding-bottom: 3px;
+    }
 }
