@@ -1,12 +1,7 @@
-.mobile {
-    display: none;
-}
-
-.mobile-slide {
-    display: none;
-}
-
-.banner-mobile {
+.mobile,
+.mobile-slide,
+.banner-mobile,
+.footer-mobile {
     display: none;
 }
 
@@ -101,7 +96,7 @@ body.active .mobile-gnb .menu-wrap .line {
     gap: 5px;
 }
 
-.accordion-item .accordion-header>img {
+.accordion-item .accordion-header > img {
     width: 14px;
     height: 14px;
     margin-bottom: 10px;
@@ -148,10 +143,9 @@ body.active .accordion {
     color: #171c22;
 }
 
-body.active .accordion-item .accordion-header>img {
+body.active .accordion-item .accordion-header > img {
     filter: invert(0);
 }
-
 
 /* ################### 1600px 미디어쿼리 ################## */
 
@@ -187,6 +181,10 @@ body.active .accordion-item .accordion-header>img {
 
     .section-04 .text .main-text {
         font-size: 80px;
+    }
+
+    .footer .inner-left {
+        padding-right: 11vw;
     }
 }
 
@@ -224,6 +222,29 @@ body.active .accordion-item .accordion-header>img {
     .section-07 .item-01 .stock {
         font-size: 30px;
         margin-bottom: 25px;
+    }
+
+    .footer .lr {
+        justify-content: space-between;
+    }
+
+    .footer .logo {
+        width: 200px;
+    }
+    
+    .footer .inner-left {
+        padding: 0;
+    }
+
+    .footer .company {
+        flex-direction: column;
+        row-gap: 14px;
+        align-items: flex-end;
+    }
+
+    .footer .company-left,
+    .footer .company-right {
+        width: fit-content;
     }
 }
 
@@ -353,7 +374,7 @@ body.active .accordion-item .accordion-header>img {
 
     .section-07 {
         padding-right: 10vw;
-        margin: 200px 0
+        margin: 200px 0;
     }
 
     .section-07 .item-01 .counter {
@@ -365,6 +386,13 @@ body.active .accordion-item .accordion-header>img {
         margin-bottom: 15px;
     }
 
+    .footer-pc {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
 }
 
 /* ################### 1030px 미디어쿼리 ################## */
@@ -688,7 +716,7 @@ body.active .accordion-item .accordion-header>img {
         width: 55vw;
     }
 
-    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
@@ -705,7 +733,6 @@ body.active .accordion-item .accordion-header>img {
     }
 
     .section-05 .inner .title {
-
         font-size: 60px;
         margin-left: 1vw;
     }
@@ -809,7 +836,6 @@ body.active .accordion-item .accordion-header>img {
     .section-07 .item-02 .percent .date {
         font-size: 12px;
     }
-
 }
 
 /* ################### 500px 미디어쿼리 ################## */

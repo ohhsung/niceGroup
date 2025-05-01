@@ -1379,7 +1379,8 @@ body.active .section-07 .btn .border {
     background: #000;
     color: #fff;
 
-    padding: 100px 192px;
+    padding: 100px 9vw 100px 10vw;
+    white-space: nowrap;
 }
 
 /* ########## 푸터 공통 토글 버튼 ########### */
@@ -1482,4 +1483,73 @@ body.active .section-07 .btn .border {
     font-size: 14px;
 }
 
-/* ########## 푸터 ########### */
+/* ########## 정렬 ########### */
+
+.footer .lr {
+    display: flex;
+}
+
+.footer .flex {
+    display: flex;
+}
+
+.footer .logo {
+    width: 276px;
+}
+
+.footer .logo img {
+    width: 100%;
+}
+
+.footer .inner-left {
+    padding-right: 13vw;
+}
+
+.footer .inner-left .copy {
+    margin: 8px 0 50px;
+    font-size: 14px;
+    color: #acacac;
+    line-height: 1.7;
+    width: 20vw;
+}
+
+.footer .inner-right {
+    padding-top: 10px;
+}
+
+.footer .inner-right .column {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 38px;
+}
+
+.footer .inner-right .column .title {
+    font-family: 'bold';
+    width: 10vw;
+}
+
+.footer .inner-right .column .sub {
+    display: flex;
+}
+
+.footer .inner-right .column .sub p {
+    width: 110px;
+}
+
+.footer .company {
+    display: flex;
+    margin-top: 80px;
+}
+
+.footer .company-left,
+.footer .company-right {
+    display: flex;
+    gap: 20px;
+    width: 50vw;
+    font-size: 14px;
+}
+
+.footer .orange {
+    color: #fc5c00;
+    font-family: 'bold';
+}
