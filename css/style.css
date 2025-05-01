@@ -1372,3 +1372,119 @@ body.active .section-07 .btn .img {
 body.active .section-07 .btn .border {
     background: #171c22;
 }
+
+/* ############################ 푸터 ################################ */
+
+.footer {
+    background: #000;
+    color: #fff;
+
+    padding: 100px 192px;
+}
+
+/* ########## 푸터 공통 토글 버튼 ########### */
+
+.footer .toggle-container {
+    font-size: 14px;
+
+    position: relative;
+    width: 250px;
+
+    padding: 15px 0 10px;
+    border-bottom: 1px solid #bebebe;
+
+    cursor: pointer;
+}
+
+.footer .toggle-container .btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .btn-wrap .btn-text {
+    font-family: 'bold';
+}
+
+.footer .toggle-btn {
+    width: 15px;
+    height: 15px;
+    position: relative;
+
+    margin-bottom: 9px;
+
+}
+
+.footer .icon-line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+/* 초기 상태: + */
+.footer .top {
+    transform: rotate(0deg);
+    /* 수평선 */
+}
+
+.footer .bottom {
+    transform: rotate(90deg);
+    /* 수직선 */
+}
+
+/* 클릭 시: × */
+.footer .toggle-btn.open .top {
+    transform: rotate(45deg);
+}
+
+.footer .toggle-btn.open .bottom {
+    transform: rotate(-45deg);
+}
+
+/* 버튼 컨텐츠 */
+.footer .toggle-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    max-height: 0;
+    width: 250px;
+    padding: 15px 5px;
+
+    background: #212121;
+
+    transition:
+        max-height 0.3s,
+        opacity 0.3s,
+        visibility 0.3s;
+
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footer .toggle-content.open {
+    width: 250px;
+    max-height: 150px;
+
+
+    opacity: 1;
+    visibility: visible
+}
+
+.footer .toggle-content p {
+    padding: 8px 0;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.section-06,
+.section-07 {
+    display: none;
+}
+
+/* ########## 푸터 ########### */
