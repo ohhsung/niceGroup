@@ -212,6 +212,10 @@ body.active .accordion-item .accordion-header>img {
     .section-05 .content {
         width: 60vw;
     }
+
+    .section-06 .banner-btn {
+        padding-left: calc(60vw - 33px);
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -446,6 +450,10 @@ body.active .accordion-item .accordion-header>img {
 
     .section-05 .content {
         padding-left: 0;
+    }
+
+    .section-06 .banner-btn {
+        bottom: 120px;
     }
 }
 
@@ -689,6 +697,8 @@ body.active .accordion-item .accordion-header>img {
         width: 16px;
         height: 16px;
     }
+
+
 }
 
 /* ################### 500px 미디어쿼리 ################## */

@@ -1078,12 +1078,10 @@ body.active .section-05 .news-wrap .news .arrow-news {
     z-index: 99;
 
     font-size: 80px;
-    transform: translateX(100%);
+    transform: translateX(-500%);
 
-    transform: opacity 0.3s, transform 0.3s;
+    transition: transform 1s;
     opacity: 0;
-
-    transition: 1s;
 }
 
 .section-06 .swiper-slide-active .title {
@@ -1091,7 +1089,7 @@ body.active .section-05 .news-wrap .news .arrow-news {
     opacity: 1;
 }
 
-.section-06 .bannerSwiper .img-wrap img {
+.section-06 .bannerSwiper .img-wrap .banner-pc {
     width: 100%;
     height: 20vw;
     object-fit: cover;
@@ -1148,11 +1146,14 @@ body.active .section-06 .bannerSwiper .img-wrap img {
 /* 버튼 */
 
 .section-06 .banner-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+
     display: flex;
     gap: 1px;
     width: fit-content;
 
-    margin-top: 50px;
     padding-left: calc(40vw - 33px);
 }
 
@@ -1164,6 +1165,27 @@ body.active .section-06 .bannerSwiper .img-wrap img {
     width: 32px;
     height: 32px;
     border: 1px solid #fff;
+    background: #171c22;
+}
+
+.section-06 .swiper-button-prev:hover,
+.section-06 .swiper-button-next:hover {
+    border: 1px solid #000;
+    background: #000;
+    filter: invert(1);
+}
+
+body.active .section-06 .swiper-button-prev,
+body.active .section-06 .swiper-button-next {
+    border: 1px solid #fff;
+    background: #000;
+    filter: invert(1);
+}
+
+body.active .section-06 .swiper-button-prev:hover,
+body.active .section-06 .swiper-button-next:hover {
+    border: 1px solid #000;
+    filter: invert(0);
 }
 
 .section-06 .swiper-button-next:after {
@@ -1188,6 +1210,8 @@ body.active .section-06 .bannerSwiper .img-wrap img {
 
 .section-06 .text {
     font-family: 'light';
+    margin-top: 50px;
+    padding-left: 2vw;
 }
 
 .section-06 .text .keyword {
@@ -1195,11 +1219,37 @@ body.active .section-06 .bannerSwiper .img-wrap img {
     color: #999;
     margin-bottom: 22px;
 
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s;
 }
 
 .section-06 .text .ex {
-    color: #fff;
     font-size: 24px;
     line-height: 1.8;
 
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
 }
+
+.section-06 .swiper-slide-active .text .keyword {
+    transform: translateX(0);
+    opacity: 1;
+
+}
+.section-06 .swiper-slide-active .text .ex {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+body.active .section-06 .text .keyword {
+    color: #585858;
+}
+
+.section-06 .view-more-btn {
+    width: 170px;
+    margin-left: 2vw;
+}
+
