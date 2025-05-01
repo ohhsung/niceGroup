@@ -1239,6 +1239,7 @@ body.active .section-06 .swiper-button-next:hover {
     opacity: 1;
 
 }
+
 .section-06 .swiper-slide-active .text .ex {
     transform: translateX(0);
     opacity: 1;
@@ -1253,3 +1254,93 @@ body.active .section-06 .text .keyword {
     margin-left: 2vw;
 }
 
+/* ######################### 섹션 7 ########################## */
+
+.section-07 {
+    margin: 320px 0 290px;
+    padding: 0 29vw 0 30vw;
+}
+
+.section-07 .inner {
+    padding: 0 2vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section-07 .item-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.section-07 .item-01 .stock {
+    font-size: 38px;
+    font-family: 'bold';
+    margin-bottom: 40px;
+}
+
+.section-07 .item-01 .counter {
+    font-size: 90px;
+    letter-spacing: -3px;
+}
+
+.section-07 .item-02 {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #585858;
+
+    padding: 30px 0;
+}
+
+.section-07 .item-02 .percent {
+    display: flex;
+    gap: 10px;
+}
+
+.section-07 .item-02 .percent .wrap {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.section-07 .item-02 .percent .wrap > svg {
+    margin-bottom: 8px;
+}
+
+.section-07 .item-02 .percent .wrap .red-text {
+    color: #ae1e02;
+}
+
+.section-07 .item-02 .percent .date {
+    color: #999;
+}
+
+body.active .section-07 .item-02 .percent .date {
+    color: #585858;
+}
+
+.section-07 .btn {
+    position: relative;
+    font-family: 'bold';
+    padding-right: 23px;
+}
+
+.section-07 .btn::after {
+    content: '';
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: -1px;
+    right: 0;
+
+    background: url('../img/icon/arrow.svg') center center / cover no-repeat;
+    filter: invert(1);
+
+}
