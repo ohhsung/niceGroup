@@ -1,4 +1,5 @@
 반응형 웹사이트 제작
+
 기술 : HTML, CSS, JAVASCRIPT, JQUERY, swiper slide, gsap
 프로그램 : 피그마, 비주얼스튜디오코드
 
@@ -10,15 +11,3 @@ https://www.figma.com/design/yhUVTel97gHBKNq9Hpn3Gi/%EB%82%98%EC%9D%B4%EC%8A%A4%
 이미지를 그리드로 나눠서 나타나게 하는 애니메이션을 구현하는 데 어려움을 겪었습니다.
 GSAP demo 사이트에서 사용 예제들을 보고 구현해 보면서 사용하는 법을 익혔습니다.
 NICE 그룹의 웹페이지 코드를 분석해 보았고, 이미지 위에 마스크 아이템을 씌우는 것이었습니다.
-
-<div class="banner-grid-num6">
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-  <div class="mask-item" style="translate: none; rotate: none; scale: none; transform: scale(0, 1);"></div>
-</div>
-
-
-한번 구현해 보니 다른 이미지에 적용하는 것도 쉬워졌습니다.
